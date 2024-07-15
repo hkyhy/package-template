@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "husky",
     "lint-staged": "lint-staged",
-    "prepare": "husky install",
     "prettier": "prettier --config .prettierrc --write '{src/**/*,index,prompts}.{js,jsx,ts,tsx,json,css,scss}'"
   },
   "lint-staged": {
