@@ -1,6 +1,6 @@
 {
   "name": "@hkyhy/template-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node包初始化模板",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   "devDependencies": {
     "husky": "^9.0.11",
     "lodash": "^4.17.21",
-    "node-sass": "^9.0.0",
+    "sass": "^1.75.0",
     "prettier": "^3.3.2"
   }
 }
