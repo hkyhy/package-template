@@ -1,0 +1,42 @@
+{
+  "name": "@hkyhy-template/node",
+  "version": "0.0.1",
+  "description": "node包初始化模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "husky",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "prettier": "prettier --config .prettierrc --write '{src/**/*,index,prompts}.{js,jsx,ts,tsx,json,css,scss}'"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "files": [
+    "prompts.json",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkyhy//template-node.git"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Meetacoo-hjf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkyhy/package-template/issues"
+  },
+  "homepage": "https://github.com/hkyhy/package-template#readme",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lodash": "^4.17.21",
+    "node-sass": "^9.0.0",
+    "prettier": "^3.3.2"
+  }
+}

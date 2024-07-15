@@ -1,0 +1,39 @@
+{
+  "name": "<%=packageName%>",
+  "version": "0.0.1",
+  "description": "<%=description%>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "husky",
+    "lint-staged": "npx lint-staged",
+    "prettier": "prettier --config .prettierrc --write '{libs/**/*,index}.{js,jsx,ts,tsx,json,css,scss}'"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "files": [
+    "index.js",
+    "libs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkyhy/<%=name%>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hkyhy/<%=name%>/issues"
+  },
+  "homepage": "https://github.com/hkyhy/<%=name%>#readme",
+  "keywords": [],
+  "author": "Meetacoo-hjf",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lodash": "^4.17.21",
+    "node-sass": "^9.0.0",
+    "prettier": "^3.3.2"
+  }
+}
