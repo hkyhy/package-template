@@ -33,7 +33,7 @@
   "devDependencies": {
     "husky": "^9.0.11",
     "lodash": "^4.17.21",
-    "node-sass": "^9.0.0",
+    "sass": "^1.75.0",
     "prettier": "^3.3.2"
   }
 }
